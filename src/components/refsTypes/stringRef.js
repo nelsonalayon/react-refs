@@ -2,14 +2,14 @@ import React from 'react';
 
 class App extends React.Component {
     handleClick = () => {
-        this.refs.password.focus();
+        this.refs.hello.focus();
         console.log(this.refs.password.value);
     }
 
     render() {
         return (
             <div>
-                <h1>stringRef</h1>
+                <h1 ref = "hello">stringRef</h1>
                 <input
                     type="email"
                     placeholder="email"
